@@ -25,7 +25,7 @@ CREATE TABLE order_items (
  FOREIGN KEY (productID) REFERENCES products(productID)
 ); 
 
--- By creating individual tables, i ensure that each row has a single single product per hour
+-- By creating individual tables, i ensure that each row has a single product per order
 
 -- QUESTION 2
 
@@ -59,4 +59,4 @@ CREATE TABLE order_details (
     FOREIGN Key(productID) REFERENCES products(productID)
 );
 
--- By creating individual tables for the customerName and orderID, i have ensured that the 1NF has been maintained and that both columns are not dependent on each other. This ensures that the quantity of producrs ordered will depend on the primary keys of the orderID and customerID
+-- By creating individual tables for the customerName and orderID, i have ensured that the 1NF has been maintained and that both columns are not dependent on each other. This ensures that the quantity of products ordered will depend on the primary keys of the orderID and customerID.
